@@ -1,0 +1,28 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+p {
+    max-width: 60rem;
+}
+
+#titlebox {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("https://gratisography.com/wp-content/uploads/2022/07/gratisography-street-walker-05-free-stock-photo-1170x780.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+}
+
+/* MEDIA QUERIES MOBILE FIRST */
+@media (min-width: 600px ) {
+
+}
