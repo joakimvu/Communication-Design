@@ -10,16 +10,39 @@ body {
   scroll-behavior: smooth;
 }
 
-p {
-  max-width: 60rem;
+h1 {
+  max-width: 50rem;
 }
 
-header {
+.img1 {
+  background-image: url("img/val-4.jpg");
+}
+
+.img2 {
+  background-image: url("img/val-2.jpg");
+}
+
+.img3 {
+  background-image: url("img/val-1.jpg");
+}
+
+.img4 {
+  background-image: url("img/val-5.jpg");
+}
+
+.img5 {
+  background-image: url("img/val-6.jpg");
+}
+
+.img5 {
+  background-image: url("img/val-3.jpg");
+}
+
+.img-parallax {
   width: 100%;
   min-height: 100vh;
   position: relative;
   overflow: hidden;
-  background-image: url("img/val-4.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -28,10 +51,9 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  
 }
 
-header div {
+.text-parallax {
   background: rgba(0, 0, 0, 0);
   color: #fff;
   text-align: center;
@@ -40,24 +62,19 @@ header div {
   align-items: center;
 }
 
-header div h1 {
+.img-parallax h1 {
   font-size: 2rem;
   text-align: center;
   text-shadow: 2px 2px #000000;
-  Font-Family: 'Cabin', Sans-Serif;
+  font-family: "Cabin", Sans-Serif;
   max-width: 20rem;
-
 }
 
-header div p {
-  font-size: 1.2rem;
-}
-
-header div:last-child {
+.img-parallax h1:last-child {
   margin-bottom: 20vh;
 }
 
-#titlebox0 {
+.text-box {
   width: 100%;
   min-height: 100vh;
   background-color: white;
@@ -65,93 +82,32 @@ header div:last-child {
   justify-content: center;
   align-items: center;
   color: black;
-  Font-Family: 'Cabin', Sans-Serif;
-
+  font-family: "Cabin", Sans-Serif;
 }
 
-#titlebox0 div {
+.text-box h1 {
   background: rgba(0, 0, 0, 0);
   text-align: center;
   height: 100vh;
   display: flex;
   align-items: center;
-
-}
-#titlebox0 div h1 {
   font-size: 2rem;
-
 }
 
-
-
-#titlebox {
-  width: 100%;
-  min-height: 100vh;
-  background-image: url("img/val-2.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center center;
-  overflow: hidden;
-}
 #titleboxvideo {
   width: 100%;
   min-height: 100vh;
-  
+
   overflow: hidden;
 }
 
 #myVideo {
   right: 0;
   bottom: 0;
-  Width: 100%
-}
-
-#titlebox2 {
   width: 100%;
-  min-height: 100vh;
-  background-image: url("img/val-1.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center center;
-  overflow: hidden;
 }
 
-#titlebox3 {
-  width: 100%;
-  min-height: 100vh;
-  background-image: url("img/val-5.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center center;
-  overflow: hidden;
-}
-
-#titlebox4 {
-  width: 100%;
-  min-height: 100vh;
-  background-image: url("img/val-6.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center center;
-  overflow: hidden;
-}
-
-#titlebox5 {
-  width: 100%;
-  min-height: 100vh;
-  background-image: url("img/val-3.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center center;
-  overflow: hidden;
-}
-
-#textbox {
+/* .textbox {
   background-color: white;
   padding: 2rem;
   max-width: 30rem;
@@ -161,12 +117,8 @@ header div:last-child {
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
-}
+} */
 
-h1{
-  max-width: 50rem;
-}
 /* MEDIA QUERIES MOBILE FIRST */
 @media (min-width: 600px) {
- 
 }
