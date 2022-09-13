@@ -48,6 +48,44 @@ h1 {
 .map-img2 {
 }
 
+/* Video Parallax */
+.video-parallax {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.video-parallax video {
+  min-width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: -999;
+}
+.video-parallax h1 {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: 2px 2px #000000;
+  font-family: "Cabin", Sans-Serif;
+  max-width: 20rem;
+}
+
+.video-parallax h1:last-child {
+  margin-bottom: 20vh;
+}
+
+/* Img Parallax */
+
 .img-parallax {
   width: 100%;
   min-height: 100vh;
