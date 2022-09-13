@@ -42,6 +42,7 @@ h1 {
 /* TODO Jostein setter inn bilde til kart over kazakshtan */
 /* Map images */
 .map-img1 {
+  background-image: url("img/map.jpg");
 }
 
 .map-img2 {
@@ -136,5 +137,12 @@ h1 {
 } */
 
 /* MEDIA QUERIES MOBILE FIRST */
-@media (min-width: 600px) {
+@media only screen and (min-width: 600px) {
+  h1 {
+    max-width: 70rem;
+  }
+
+  .img-parallax h1 {
+    max-width: 70rem;
+  }
 }
