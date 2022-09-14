@@ -49,7 +49,7 @@ h1 {
 /* Last Scroll */
 .last-bkg {
   background: rgba(255, 255, 255, 1);
-  margin: -50px
+  margin: -50px;
 }
 
 .last-text {
@@ -60,11 +60,11 @@ h1 {
   font-size: 2rem;
   font-family: "Cabin", Sans-Serif;
   max-width: 60rem;
-  padding: 80px
+  padding: 80px;
 }
 
 .last-img-parallax {
-  display: sticky
+  display: sticky;
 }
 
 .emtpy-bkg {
@@ -174,8 +174,6 @@ h1 {
   overflow: hidden;
 } */
 
-
-
 /* .textbox {
   background-color: white;
   padding: 2rem;
@@ -198,10 +196,3 @@ h1 {
     max-width: 70rem;
   }
 }
-
-/* @media only screen and (max-width: 600px) {
-  .myVideo {
-    height: 100vh;
-    /* width: 100vh; */
-  }
-} */
