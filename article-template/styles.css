@@ -72,7 +72,6 @@ h1 {
 .video-parallax h1 {
   color: #fff;
   text-align: center;
-  text-transform: uppercase;
   font-size: 2rem;
   text-align: center;
   text-shadow: 2px 2px #000000;
@@ -115,7 +114,7 @@ h1 {
   text-align: center;
   text-shadow: 2px 2px #000000;
   font-family: "Cabin", Sans-Serif;
-  max-width: 20rem;
+  max-width: 60rem;
 }
 
 .img-parallax h1:last-child {
@@ -221,6 +220,26 @@ h1 {
 }
 
 /* MEDIA QUERIES MOBILE FIRST */
+@media only screen and (max-width: 1000px) {
+  .text-box h1 {
+    max-width: 40rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .img-parallax h1 {
+    max-width: 40rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .video-parallax h1 {
+    max-width: 40rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .text-box h1 {
     max-width: 20rem;
