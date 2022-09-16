@@ -107,6 +107,7 @@ h1 {
   height: 100vh;
   display: flex;
   align-items: center;
+  padding: 0 20px;
 }
 
 .img-parallax h1 {
@@ -141,6 +142,7 @@ h1 {
   font-size: 2rem;
   font-family: "Cabin", Sans-Serif;
   max-width: 60rem;
+  padding: 0 20px;
 }
 
 /* .titleboxvideo {
@@ -175,6 +177,7 @@ h1 {
   font-family: "Cabin", Sans-Serif;
   max-width: 60rem;
   text-align: center;
+  padding: 0 20px;
 }
 
 .last-section .img6 {
