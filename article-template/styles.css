@@ -177,7 +177,6 @@ img {
   z-index: 5000;
   margin: 0 auto;
   font-size: 2rem;
-  font-family: "Cabin", Sans-Serif;
   max-width: 60rem;
   text-align: center;
   padding: 0 20px;
@@ -223,6 +222,16 @@ img {
 
 .paddingFix {
   padding-bottom: 400px;
+}
+footer {
+  display: flex;
+  padding-left: 40px;
+  align-items: center;
+  background-color: white;
+  height: 100px;
+}
+footer strong {
+  padding-right: 20px;
 }
 
 /* MEDIA QUERIES MOBILE FIRST */
