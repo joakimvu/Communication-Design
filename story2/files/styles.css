@@ -329,7 +329,40 @@ p {
   padding-bottom: 400px;
 }
 
+/* Infographics */
+.infographic-info-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.infographic-info .infographic-subtitle {
+  text-align: center;
+  margin: 0;
+}
+
+.infographic-info h3 {
+  text-align: center;
+  margin: 0;
+}
+
+.infographic-info-container h3 {
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.infographic-info-container img {
+  /* height: 100px; */
+  max-width: 1fr;
+  padding: 2rem;
+}
+
 /* MEDIA QUERIES MOBILE FIRST */
+@media only screen and (max-width: 600px) {
+  .infographic-info-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 @media only screen and (max-width: 1000px) {
   .text-box h1 {
     max-width: 40rem;
