@@ -14,6 +14,38 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
     />
+    <style>
+			div#chart {
+				width: 400px;
+				height: 400px;
+				margin: 100px auto;
+			}
+
+			canvas:hover {
+				cursor: pointer;
+				cursor: hand;
+			}
+
+			.modalbox {
+				padding: 25px;
+				border: 1px solid #CCC;
+				background: #FFF;
+				height: 300px;
+				width: 500px;
+				display: none;
+				z-index:9999;
+			}
+
+			.iw-modalOverlay{
+				background: #000;
+				opacity: 0.6;
+			}
+
+
+		</style>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="/story2/files/modalbox.js"></script>
+    <script type="text/javascript" src="/story2/files/chart.js"></script>
   </head>
   <body>
     <!-- Image parallax -->
@@ -170,7 +202,35 @@
               >Dag Gjertsen(32), i en hotel lobby med deltakere på Motorfest
               2022.</span
             >
-            <p class="todos">TODO - HER KOMMER INFOCRAPHICS</p>
+            <!------------ Infographics Motorfest info ------------>
+            <div class="infographic-piechart-cars">
+              <div id="chart">
+                <canvas id="piechart"></canvas>
+              </div>
+          
+              <div id="modal-0" class="modalbox">
+                <h2>A</h2>
+                <p>The highest grade you can obtain, which means you have superseeded the requirements in the course, and delivered with creativity, effort and brilliance.</p>
+              </div>
+              <div id="modal-1" class="modalbox">
+                <h2>B</h2>
+                <p>The second highest grade you can obtain, which means you have met all the requirements in the course, and delivered with creativity and effort.</p>
+              </div>
+              <div id="modal-2" class="modalbox">
+                <h2>C</h2>
+                <p>The average grade, which means you have met all the requirements in the course.</p>
+              </div>
+              <div id="modal-3" class="modalbox">
+                <h2>D</h2>
+                <p>Sniffing on average, which means you have met some the requirements in the course.</p>
+              </div>
+              <div id="modal-4" class="modalbox">
+                <h2>E</h2>
+                <p>The bare minimum. Some effort has been spotted as to achieve some minor objects during the course.</p>
+              </div>
+          
+
+            </div>
             <p>
               - Årets tur bestod av veldig mange gode minner. Vi hadde mange
               spektakulære kjøre- og naturopplevelser, men det som for meg står
@@ -219,7 +279,41 @@
       </h1>
     </section>
     <footer><strong>Laget av: </strong> Stig ark, Jostein Gjersten og Joakim Vu - Foto og bilder av Jostein Gjertsen</p></footer>
+    <script>
+      $(document).ready(function() {
 
+        //Setup chart
+        var chartbox = document.getElementById('piechart');
+        var ctx = chartbox.getContext('2d');
+        var piechart = new Chart(ctx, {
+          type: 'pie',
+          data: {
+            datasets: [{
+              label: "Grades 2015",
+              data: [2, 7, 16, 11, 4],
+              backgroundColor: ['rgb(200, 99, 132)', 'rgb(220, 99, 100)', 'rgb(100, 199, 132)', 'rgb(60, 99, 192)', 'rgb(100, 29, 232)', 'rgb(130, 129, 230)'],
+            }],
+            labels: ["A", "B", "C", "D", "E",]
+          },
+          options: {
+            responsive: true
+          }
+        });
+
+        //When chart is drawn, connect modalboxes to each event
+        chartbox.onclick = function(evt) {
+          var activepoints = piechart.getElementsAtEvent(evt);
+
+          if(activepoints[0]) {
+            var point_id = activepoints[0]['_index'];
+            console.log("ID clicked: " + point_id);
+            $("#modal-"+point_id).modalBox();
+          }
+        }
+
+      });
+      
+    </script>
     <script src="/article-template/index.js"></script>
   </body>
 </html>
