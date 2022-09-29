@@ -329,10 +329,11 @@ p {
   padding-bottom: 400px;
 }
 
-/* Infographics */
+/* --------------- Infographics Numbers --------------- */
 .infographic-info-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin: 3rem 0;
 }
 
 .infographic-info .infographic-subtitle {
@@ -354,6 +355,16 @@ p {
   /* height: 100px; */
   max-width: 1fr;
   padding: 2rem;
+}
+
+/* --------------- Infographics Piechart --------------- */
+.piechart-title {
+  margin: 3rem 0 -5rem 0;
+}
+.modal-img {
+  width: 100%;
+  max-height: 220px;
+  object-fit: contain;
 }
 
 /* MEDIA QUERIES MOBILE FIRST */
