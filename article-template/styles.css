@@ -144,6 +144,9 @@ h1 {
   max-width: 60rem;
   padding: 0 20px;
 }
+img {
+  margin-top: 20px;
+}
 
 /* .titleboxvideo {
   width: 100%;

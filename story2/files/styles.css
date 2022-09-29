@@ -45,6 +45,7 @@ li:before {
 span {
   color: rgb(88, 88, 88);
   font-weight: 300;
+  margin-bottom: 30px;
 }
 
 /* Valeria Images */
@@ -53,11 +54,11 @@ span {
 }
 
 .img2 {
-  background-image: url("img/mf2.jpg");
+  background-image: url("img/mf6.jpg");
 }
 
 .img3 {
-  background-image: url("img/mf3.jpg");
+  background-image: url("img/mf8.jpg");
 }
 
 .img4 {
@@ -250,11 +251,16 @@ p {
   max-width: 800px;
   padding-bottom: 30px;
 }
+
+.videoContent video {
+  margin-top: 20px;
+}
 .imagediv {
   max-width: 800px;
 }
 .imagediv img {
   max-width: 100%;
+  margin-top: 30px;
 }
 
 .last-section h1 {
