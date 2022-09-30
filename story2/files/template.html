@@ -330,67 +330,67 @@
               <!-- America Cars -->
               <div id="modal-1" class="modalbox">
                 <div class="slideshow-container">
-                  <div class="mySlides fade">
+                  <div class="mySlides2 fade">
                     <div class="numbertext">1 / 21</div>
                     <img src="/story2/piechart/usa/chevycamaro.jpg" style="width:100%">
                   </div>
                   
-                  <div class="mySlides fade">
+                  <div class="mySlides2 fade">
                     <div class="numbertext">2 / 21</div>
                     <img src="/story2/piechart/usa/chevyvette1.jpg" style="width:100%">
                   </div>
                   
-                  <div class="mySlides fade">
+                  <div class="mySlides2 fade">
                     <div class="numbertext">3 / 21</div>
                     <img src="/story2/piechart/usa/chevyvette2.jpg" style="width:100%">
                   </div>
                   
-                  <div class="mySlides fade">
+                  <div class="mySlides2 fade">
                     <div class="numbertext">4 / 21</div>
                     <img src="/story2/piechart/usa/chevyvette3.jpg" style="width:100%">
                   </div>
                   
-                  <div class="mySlides fade">
+                  <div class="mySlides2 fade">
                     <div class="numbertext">5 / 21</div>
                     <img src="/story2/piechart/usa/chevyvette4.jpg" style="width:100%">
                   </div>
                   
-                  <div class="mySlides fade">
+                  <div class="mySlides2 fade">
                     <div class="numbertext">6 / 21</div>
                     <img src="/story2/piechart/usa/chevyvette5.jpg" style="width:100%">
                   </div>
                   
-                  <div class="mySlides fade">
+                  <div class="mySlides2 fade">
                     <div class="numbertext">7 / 21</div>
                     <img src="/story2/piechart/usa/chevyvette6.jpg" style="width:100%">
                   </div>
                   
-                  <div class="mySlides fade">
+                  <div class="mySlides2 fade">
                     <div class="numbertext">8 / 21</div>
                     <img src="/story2/piechart/usa/chevyvette7.jpg" style="width:100%">
                   </div>
                   
-                  <div class="mySlides fade">
+                  <div class="mySlides2 fade">
                     <div class="numbertext">9 / 21</div>
                     <img src="/story2/piechart/usa/chevyvette8.jpg" style="width:100%">
                   </div>
                   
-                  <div class="mySlides fade">
+                  <div class="mySlides2 fade">
                     <div class="numbertext">10 / 21</div>
                     <img src="/story2/piechart/usa/chevyvette9.jpg" style="width:100%">
                   </div>
                   
-                  <div class="mySlides fade">
+                  <div class="mySlides2 fade">
                     <div class="numbertext">11 / 21</div>
                     <img src="/story2/piechart/usa/chevyvette10.jpg" style="width:100%">
                   </div>
                   
-                  <div class="mySlides fade">
+                  <div class="mySlides2 fade">
                     <div class="numbertext">12 / 21</div>
                     <img src="/story2/piechart/usa/chevyvette11.jpg" style="width:100%">
                   </div>
 
-                  <div class="mySlides fade">
+                  <div class="mySlides2 fade">
                     <div class="numbertext">13 / 21</div>
                     <img src="/story2/piechart/usa/dodgesrt1.jpg" style="width:100%">
                   </div>
@@ -415,31 +415,31 @@
                     <img src="/story2/piechart/usa/fordmustang2.jpg" style="width:100%">
                   </div>
                   
-                  <div class="mySlides fade">
+                  <div class="mySlides2 fade">
                     <div class="numbertext">18 / 21</div>
                     <img src="/story2/piechart/usa/fordmustang3.jpg" style="width:100%">
                   </div>
                   
-                  <div class="mySlides fade">
+                  <div class="mySlides2 fade">
                     <div class="numbertext">19 / 21</div>
                     <img src="/story2/piechart/usa/fordmustang4.jpg" style="width:100%">
                     <div class="text">Caption Three</div>
                   </div>
                   
-                  <div class="mySlides fade">
+                  <div class="mySlides2 fade">
                     <div class="numbertext">20 / 21</div>
                     <img src="/story2/piechart/usa/fordmustang5.jpg" style="width:100%">
                     <div class="text">Caption Three</div>
                   </div>
                   
-                  <div class="mySlides fade">
+                  <div class="mySlides2 fade">
                     <div class="numbertext">21 / 21</div>
                     <img src="/story2/piechart/usa/transam.jpg" style="width:100%">
                     <div class="text">Caption Three</div>
                   </div>
                   
-                  <a class="prev" onclick="plusSlides(-1)">❮</a>
-                  <a class="next" onclick="plusSlides(1)">❯</a>
+                  <a class="prev" onclick="plusSlides2(-1)">❮</a>
+                  <a class="next" onclick="plusSlides2(1)">❯</a>
               </div>
       
               </div>
@@ -562,16 +562,30 @@
         slides[slideIndex-1].style.display = "block";  
       }
 
+      let slideIndex2 = 1;
+      showSlides2(slideIndex2);
+      
+      function plusSlides2(n) {
+        showSlides2(slideIndex2 += n);
+      }
+      
+      function currentSlide2(n) {
+        showSlides2(slideIndex2 = n);
+      }
+
       function showSlides2(n) {
         let i;
         let slides = document.getElementsByClassName("mySlides2");
-        if (n > slides.length) {slideIndex = 1}    
+        if (n > slides.length) {slideIndex2 = 1}    
         if (n < 1) {slideIndex = slides.length}
         for (i = 0; i < slides.length; i++) {
           slides[i].style.display = "none";  
         }
-        slides[slideIndex-1].style.display = "block";  
+        slides[slideIndex2-1].style.display = "block";  
       }
+
+
+ 
       </script>
 
     <script src="/article-template/index.js"></script>
