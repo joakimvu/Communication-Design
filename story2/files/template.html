@@ -423,19 +423,16 @@
                   <div class="mySlides2 fade">
                     <div class="numbertext">19 / 21</div>
                     <img src="/story2/piechart/usa/fordmustang4.jpg" style="width:100%">
-                    <div class="text">Caption Three</div>
                   </div>
                   
                   <div class="mySlides2 fade">
                     <div class="numbertext">20 / 21</div>
                     <img src="/story2/piechart/usa/fordmustang5.jpg" style="width:100%">
-                    <div class="text">Caption Three</div>
                   </div>
                   
                   <div class="mySlides2 fade">
                     <div class="numbertext">21 / 21</div>
                     <img src="/story2/piechart/usa/transam.jpg" style="width:100%">
-                    <div class="text">Caption Three</div>
                   </div>
                   
                   <a class="prev" onclick="plusSlides2(-1)">❮</a>
@@ -445,14 +442,67 @@
               </div>
               <!-- Japan Cars -->
               <div id="modal-2" class="modalbox">
-                </div>
+                <div class="slideshow-container">
+                  <div class="mySlides3 fade">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="/story2/piechart/jap/lexus.jpg" style="width:100%">
+                  </div>
+
+                  <div class="mySlides3 fade">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="/story2/piechart/jap/nissangtr.jpg" style="width:100%">
+                  </div>
+
+                  <div class="mySlides3 fade">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="/story2/piechart/jap/nissangtr2.jpg" style="width:100%">
+                  </div>
+
+                  <div class="mySlides3 fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="/story2/piechart/jap/toyotasupra.jpg" style="width:100%">
+                  </div>
+                  
+                  <a class="prev" onclick="plusSlides3(-1)">❮</a>
+                  <a class="next" onclick="plusSlides3(1)">❯</a>
+              </div>
+      
               </div>
               <!-- British Cars -->
               <div id="modal-3" class="modalbox">
+                <div class="slideshow-container">
+                  <div class="mySlides4 fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="/story2/piechart/uk/accobra.jpg" style="width:100%">
+                  </div>
+
+                  <div class="mySlides4 fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="/story2/piechart/uk/lotus1.jpg" style="width:100%">
+                  </div>
+
+                  <div class="mySlides4 fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="/story2/piechart/uk/lotus2.jpg" style="width:100%">
+                  </div>
+                  
+                  <a class="prev" onclick="plusSlides4(-1)">❮</a>
+                  <a class="next" onclick="plusSlides4(1)">❯</a>
+              </div>
+      
               </div>
               <!-- Italian Cars -->
               <div id="modal-4" class="modalbox">
-                
+                <div class="slideshow-container">
+                  <div class="mySlides5 fade">
+                    <div class="numbertext">1 / 1</div>
+                    <img src="/story2/piechart/it/rari.jpg" style="width:100%">
+                  </div>
+                  
+                  <a class="prev" onclick="plusSlides5(-1)">❮</a>
+                  <a class="next" onclick="plusSlides5(1)">❯</a>
+              </div>
+      
               </div>
             </div>
             
@@ -542,15 +592,12 @@
     <script>
       let slideIndex = 1;
       showSlides(slideIndex);
-      
       function plusSlides(n) {
         showSlides(slideIndex += n);
       }
-      
       function currentSlide(n) {
         showSlides(slideIndex = n);
       }
-      
       function showSlides(n) {
         let i;  
         let slides = document.getElementsByClassName("mySlides");
@@ -564,26 +611,79 @@
 
       let slideIndex2 = 1;
       showSlides2(slideIndex2);
-      
       function plusSlides2(n) {
         showSlides2(slideIndex2 += n);
       }
-      
       function currentSlide2(n) {
         showSlides2(slideIndex2 = n);
       }
-
       function showSlides2(n) {
         let i;
         let slides = document.getElementsByClassName("mySlides2");
         if (n > slides.length) {slideIndex2 = 1}    
-        if (n < 1) {slideIndex = slides.length}
+        if (n < 1) {slideIndex2 = slides.length}
         for (i = 0; i < slides.length; i++) {
           slides[i].style.display = "none";  
         }
         slides[slideIndex2-1].style.display = "block";  
       }
 
+      let slideIndex3 = 1;
+      showSlides3(slideIndex3);
+      function plusSlides3(n) {
+        showSlides3(slideIndex3 += n);
+      }
+      function currentSlide3(n) {
+        showSlides3(slideIndex3 = n);
+      }
+      function showSlides3(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides3");
+        if (n > slides.length) {slideIndex3 = 1}    
+        if (n < 1) {slideIndex3 = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slides[slideIndex3-1].style.display = "block";  
+      }
+
+      let slideIndex4 = 1;
+      showSlides4(slideIndex4);
+      function plusSlides4(n) {
+        showSlides4(slideIndex4 += n);
+      }
+      function currentSlide4(n) {
+        showSlides4(slideIndex4 = n);
+      }
+      function showSlides4(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides4");
+        if (n > slides.length) {slideIndex4 = 1}    
+        if (n < 1) {slideIndex4 = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slides[slideIndex4-1].style.display = "block";  
+      }
+
+      let slideIndex5 = 1;
+      showSlides5(slideIndex5);
+      function plusSlides5(n) {
+        showSlides5(slideIndex5 += n);
+      }
+      function currentSlide5(n) {
+        showSlides5(slideIndex5 = n);
+      }
+      function showSlides5(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides5");
+        if (n > slides.length) {slideIndex5 = 1}    
+        if (n < 1) {slideIndex4 = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slides[slideIndex5-1].style.display = "block";  
+      }
 
  
       </script>
