@@ -362,7 +362,7 @@ p {
   margin: 3rem 0 -5rem 0;
 }
 .modal-img {
-  width: 100%;
+  width: 80%;
   max-height: 220px;
   object-fit: contain;
 }
