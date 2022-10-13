@@ -31,10 +31,10 @@ h1 {
   background-image: url("src/img/foto4.jpg");
 }
 .img5 {
-  background-image: url("src/img/foto4.jpg");
+  background-image: url("src/img/foto5.jpg");
 }
 .img6 {
-  background-image: url("src/img/foto5.jpg");
+  background-image: url("src/img/foto6.jpg");
 }
 .img6 {
   background-image: url("src/img/foto6.jpg");
@@ -47,9 +47,6 @@ h1 {
 }
 .img9 {
   background-image: url("src/img/foto9.jpg");
-}
-.img10 {
-  background-image: url("src/img/foto10.jpg");
 }
 .img10 {
   background-image: url("src/img/foto10.jpg");
@@ -71,6 +68,12 @@ h1 {
 }
 .img16 {
   background-image: url("src/img/foto16.jpg");
+}
+.img17 {
+  background-image: url("src/img/foto17.jpg");
+}
+.img-map1 {
+  background-image: url("src/img/map1.png");
 }
 
 /* Video Parallax */
@@ -172,29 +175,6 @@ h1 {
   max-width: 60rem;
   padding: 0 20px;
 }
-/* img {
-  margin-top: 20px;
-} */
-
-/* .titleboxvideo {
-  width: 100%;
-  min-height: 100vh;
-  overflow: hidden;
-} */
-
-/* .textbox {
-  background-color: white;
-  padding: 2rem;
-  max-width: 30rem;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-} */
-
-/* LAST PART */
 
 footer {
   display: flex;
