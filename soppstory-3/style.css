@@ -23,3 +23,9 @@ html {
   left: 50%;
   z-index: 0;
 }
+
+img {
+  width: 100vh;
+  height: 100vh;
+  object-fit: cover;
+}
